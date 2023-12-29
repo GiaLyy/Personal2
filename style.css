@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(103, 126, 211);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+section{
+    padding: 40px;
+}
+
+.btn-radio{
+    padding-left: 40px;
+}
+
+.btn-radio input{
+    margin-left: 30px;
+}
+
+.khoi{
+    width: 1080px;
+    height: 500px;
+    margin: auto;
+    background-image: url(./img/đhNL.jpg);
+    background-size: cover;
+    animation: phongto 3s forwards;
+    position: relative;
+}
+
+.khoi h2{
+    width: 700px;
+    height: 30px;
+    padding: 5px 10px;
+    text-align: center;
+    box-sizing: border-box;
+    color: hsl(0, 0%, 82%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -300px;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: chuchay 4s forwards;
+    animation-delay: 3s;
+    opacity: 0;
+}
+
+@-webkit-keyframes phongto{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+
+@-webkit-keyframes chuchay{
+    from{
+        opacity: 0;
+        margin-left: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-left: -300px;
+    }
+}
+
+.defaul-settings{
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-top: 100px;
+}
+
+.defaul-settings label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+.defaul-settings input, select {
+    margin-bottom: 15px;
+  }
+  
+.defaul-settings button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+.content {
+    padding: 20px;
+}
+
+#contactForm {
+    display: grid;
+    grid-gap: 20px;
+}
+
+footer {
+    background-color: rgb(103, 126, 211);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
